@@ -1,4 +1,4 @@
-import React from 'react'
+
 import { Link, useNavigate } from 'react-router-dom'
 import { useAuth } from '../context/authContext'
 
@@ -7,12 +7,12 @@ export default function Header() {
     const { user , setUser } = useAuth()
     const navigate = useNavigate()
 
-    const handleLogout = () => {
-        setUser(null)
-        localStorage.removeItem("accessToken")
-        localStorage.removeItem("refreshToken")
-        navigate("/login")
-    }
+    // const handleLogout = () => {
+    //     setUser(null)
+    //     localStorage.removeItem("accessToken")
+    //     localStorage.removeItem("refreshToken")
+    //     navigate("/login")
+    // }
 
   return (
     <header className="bg-white shadow-md">
