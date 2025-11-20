@@ -1,4 +1,4 @@
-import React, { lazy, Suspense, type ReactNode } from 'react'
+import  { lazy, Suspense, type ReactNode } from 'react'
 import { BrowserRouter, Link, Navigate, Route, Routes } from 'react-router-dom'
 import { useAuth } from '../context/authContext'
 import Layout from '../components/Layout'
