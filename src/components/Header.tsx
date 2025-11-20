@@ -1,11 +1,11 @@
 
-import { Link, useNavigate } from 'react-router-dom'
+import { Link } from 'react-router-dom'
 import { useAuth } from '../context/authContext'
 
 export default function Header() {
 
-    const { user , setUser } = useAuth()
-    const navigate = useNavigate()
+    const { user } = useAuth()
+    // const navigate = useNavigate()
 
     // const handleLogout = () => {
     //     setUser(null)
